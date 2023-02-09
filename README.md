@@ -1,7 +1,11 @@
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?color=%2338BCF7&center=true&vCenter=true&lines=SCRIPT+XRAY" />
 
- <h2 align="center">🅹🆂🅿🅷🅰🅽🆃🅾🅼 AutoScript VPN <img src="https://img.shields.io/badge/Version-Senaiper_1.5-red.svg"></h2>
+</p>
 
+</p><h2 align="center">🅹🆂🅿🅷🅰🅽🆃🅾🅼 AutoScript VPN <img src="https://img.shields.io/badge/Version-Senaiper_1.5-red.svg"></h2>
 
+</p>
 
 ### Update & upgrade first your VPS for Debian 10 & 11
 
