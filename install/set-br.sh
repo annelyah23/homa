@@ -2,7 +2,7 @@
 GitUser="annelyah23"
 curl https://rclone.org/install.sh | bash
 printf "q\n" | rclone config
-wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/rclone.conf"
+wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/${GitUser}/homa/main/rclone.conf"
 git clone  https://github.com/${GitUser}/wondershaper.git
 cd wondershaper
 make install
