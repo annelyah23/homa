@@ -3,8 +3,6 @@
 
 
 
-## Commands : <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=powershell&label=Shell&message=Bash%20Script&color=lightgray">
-
 ### Update & upgrade first your VPS for Debian 10 & 11
 
   ```html
