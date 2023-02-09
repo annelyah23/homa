@@ -24,7 +24,7 @@
 
   ```
  
- ### Copy & paste 👇👇 to your VPS if <img src="https://img.shields.io/badge/Error-red.svg">(WG Only)
+ ### Copy & paste to your VPS if <img src="https://img.shields.io/badge/Error-red.svg">(WG Only)
  ### Wireguard
 
   ```html
