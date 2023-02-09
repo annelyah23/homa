@@ -98,18 +98,3 @@ systemctl restart wg-quick@wg0
    - Full Orders For Various Services
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-## ⏩ BUY ME A COFFEE IF YOU LIKE THIS SCRIPT... ⏪
-
-<b>
-<br>
-<p align="center">
-<img src="https://user-images.githubusercontent.com/89685787/213615495-bf99dc3a-8e9d-48cc-a1e9-2a3691c2cd88.jpg" width="300" title="Autoscript-Lite">
-<b>
-
-
-
-<p align="center">
-  <a><img src="https://img.shields.io/badge/Dicopy%20©-drgvpn%20AutoScriptVPN%202023.%20All%20rights%20reserved...-blueviolet.svg" style="max-width:200%;">
-    </p>
-   </p>
