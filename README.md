@@ -5,29 +5,29 @@
 
 ## Commands : <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=powershell&label=Shell&message=Bash%20Script&color=lightgray">
 
-## Update & upgrade first your VPS for Debian 10 & 11
+### Update & upgrade first your VPS for Debian 10 & 11
 
   ```html
   apt-get update && apt-get upgrade -y 
 
   ```
 
-## Update & upgrade First your VPS for Ubuntu 18.04 & 20.04
+### Update & upgrade First your VPS for Ubuntu 18.04 & 20.04
 
   ```html
   apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && sleep 2 && reboot
 
   ```
  
-## Installation scripts
+### Installation scripts
 
   ```html
   sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://raw.githubusercontent.com/annelyah23/homa/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
 
   ```
  
- ## Copy & paste 👇👇 to your VPS if ERROR (WG ONLY)
- ## Wireguard
+ ### Copy & paste 👇👇 to your VPS if <img src="https://img.shields.io/badge/Error-red.svg">(WG Only)
+ ### Wireguard
 
   ```html
   echo "deb http://deb.debian.org/debian/ unstable main" >/etc/apt/sources.list.d/unstable.list
