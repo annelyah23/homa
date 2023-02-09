@@ -21,12 +21,9 @@ echo ''
 echo "                                                              "
 echo -e "$Lyellow                ⚡ PREMIUM AUTO SCRIPT ⚡"$NC
 echo -e "$green.........................................................."$NC
-echo -e "$Lyellow                  Autoscript By drgvpn"$NC
-echo -e "$Lyellow                    CONTACT TELEGRAM"$NC
-echo -e "$Lyellow                       @info_android9"$NC
+echo -e "$Lyellow                  Autoscript By JsPhantom"$NC
 echo -e "$green.........................................................."$NC
-echo ''
-echo -e "$Lyellow                       Tunggu 10 Saat!"$NC
+echo -e "$Lyellow                       Tunggu sbentar"$NC
 echo -e "$green.........................................................."$NC
 sleep 6
 clear
@@ -50,7 +47,7 @@ VALIDITY() {
     today=$(date -d "0 days" +"%Y-%m-%d")
     Exp1=$(curl https://raw.githubusercontent.com/${GitUser}/allow/main/ipvps.conf | grep $MYIP | awk '{print $4}')
     if [[ $today < $Exp1 ]]; then
-        echo -e "\e[32mTahniah! Anda Dibenarkan menggunakan AUTOSCRIPT DRGVPN..\e[0m"
+        echo -e "\e[32mTahniah! Anda Dibenarkan menggunakan AUTOSCRIPT JsPhantom..\e[0m"
         sleep 5
     else
         echo -e "\e[31mYOUR SCRIPT HAS EXPIRED!\e[0m"
@@ -63,7 +60,7 @@ VALIDITY() {
     today=$(date -d "0 days" +"%Y-%m-%d")
     Exp1=$(curl https://raw.githubusercontent.com/${GitUser}/allow/main/ipvps.conf | grep $MYIP | awk '{print $4}')
     if [[ $today < $Exp1 ]]; then
-        echo -e "\e[32mTahniah! Anda Dibenarkan menggunakan AUTOSCRIPT DRGVPN..\e[0m"
+        echo -e "\e[32mTahniah! Anda Dibenarkan menggunakan AUTOSCRIPT JsPhantom..\e[0m"
         sleep 5
     else
         echo -e "\e[31mYOUR SCRIPT HAS EXPIRED!\e[0m"
@@ -268,13 +265,13 @@ echo "   - Auto Delete Expired Account" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
-echo -e "\e[1;32m══════════════════Autoscript By DRGVPN══════════════════\e[0m" | tee -a log-install.txt
+echo -e "\e[1;32m══════════════════Autoscript By JsPhantom══════════════════\e[0m" | tee -a log-install.txt
 sleep 7
 clear
 echo ""
 echo -e "    \e[1;32m.------------------------------------------.\e[0m"
 echo -e "    \e[1;32m|     SUCCESFULLY INSTALLED THE SCRIPT     |\e[0m"
-echo -e "    \e[1;32m|         PREMIUM BY INFOANDROID          |\e[0m"
+echo -e "    \e[1;32m|         PREMIUM BY JsPhantom.            |\e[0m"
 echo -e "    \e[1;32m'------------------------------------------'\e[0m"
 echo ""
 echo -e "   \e[1;32mYour VPS Will Be Automatical Reboot In 5 seconds\e[0m"
