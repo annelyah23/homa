@@ -6,7 +6,7 @@ export BLUE='\e[0;34m'
 export NC='\e[0m'
 
 #wget https://github.com/${GitUser}/
-GitUser="Internetvps"
+GitUser="annelyah23"
 
 # // MY IPVPS
 export MYIP=$(curl -sS ipv4.icanhazip.com)
@@ -37,7 +37,7 @@ fi
 
 # // GMAIL && DOMAIN
 clear
-export default_email=$( curl -sS https://raw.githubusercontent.com/${GitUser}/email/main/default.conf )
+export default_email=$( curl -sS https://raw.githubusercontent.com/${GitUser}/emel/main/default.conf )
 export emailcf=$(cat /usr/local/etc/xray/email)
 
 clear
