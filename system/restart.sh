@@ -1,5 +1,5 @@
 #wget https://github.com/${GitUser}/
-GitUser="Internetvps"
+GitUser="annelyah23"
 #Colour
 white='\e[0;37m'
 green='\e[0;32m'
