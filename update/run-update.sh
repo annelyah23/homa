@@ -1,5 +1,5 @@
 #wget https://github.com/${GitUser}/
-GitUser="Internetvps"
+GitUser="annelyah23"
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
 		exit 1
@@ -84,7 +84,7 @@ sleep 1
 echo ""
 # UPDATE RUN-UPDATE
 cd /usr/bin
-wget -O run-update "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/update/run-update.sh"
+wget -O run-update "https://raw.githubusercontent.com/${GitUser}/homa/main/update/run-update.sh"
 chmod +x run-update
 # RUN UPDATE
 echo ""
@@ -96,24 +96,24 @@ echo ""
 echo -e "\e[0;32mNew Version Downloading started!\e[0m"
 sleep 2
 cd /usr/bin
-wget -O update "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/update/update.sh"
-wget -O run-update "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/update/run-update.sh"
-wget -O message-ssh "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/update/message-ssh.sh"
-wget -O change-port "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/change.sh"
-wget -O system "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/menu/system.sh"
-wget -O menu "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/menu.sh"
-wget -O add-host "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/system/add-host.sh"
-wget -O check-sc "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/system/running.sh"
-wget -O cert "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/cert.sh"
-wget -O trojaan "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/menu/trojaan.sh"
-wget -O xraay "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/menu/xraay.sh"
-wget -O xp "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/xp.sh"
-wget -O port-xray "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/change-port/port-xray.sh"
-wget -O themes "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/menu/themes.sh"
-wget -O autobackup "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/system/backupBot.sh"
-wget -O backup "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/system/backup.sh"
-wget -O bckp "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/system/bckp.sh"
-wget -O restore "https://raw.githubusercontent.com/${GitUser}/drgvpnscript/main/system/restore.sh"
+wget -O update "https://raw.githubusercontent.com/${GitUser}/homa/main/update/update.sh"
+wget -O run-update "https://raw.githubusercontent.com/${GitUser}/homa/main/update/run-update.sh"
+wget -O message-ssh "https://raw.githubusercontent.com/${GitUser}/homa/main/update/message-ssh.sh"
+wget -O change-port "https://raw.githubusercontent.com/${GitUser}/homa/main/change.sh"
+wget -O system "https://raw.githubusercontent.com/${GitUser}/homa/main/menu/system.sh"
+wget -O menu "https://raw.githubusercontent.com/${GitUser}/homa/main/menu.sh"
+wget -O add-host "https://raw.githubusercontent.com/${GitUser}/homa/main/system/add-host.sh"
+wget -O check-sc "https://raw.githubusercontent.com/${GitUser}/homa/main/system/running.sh"
+wget -O cert "https://raw.githubusercontent.com/${GitUser}/homa/main/cert.sh"
+wget -O trojaan "https://raw.githubusercontent.com/${GitUser}/homa/main/menu/trojaan.sh"
+wget -O xraay "https://raw.githubusercontent.com/${GitUser}/homa/main/menu/xraay.sh"
+wget -O xp "https://raw.githubusercontent.com/${GitUser}/homa/main/xp.sh"
+wget -O port-xray "https://raw.githubusercontent.com/${GitUser}/homa/main/change-port/port-xray.sh"
+wget -O themes "https://raw.githubusercontent.com/${GitUser}/homa/main/menu/themes.sh"
+wget -O autobackup "https://raw.githubusercontent.com/${GitUser}/homa/main/system/backupBot.sh"
+wget -O backup "https://raw.githubusercontent.com/${GitUser}/homa/main/system/backup.sh"
+wget -O bckp "https://raw.githubusercontent.com/${GitUser}/homa/main/system/bckp.sh"
+wget -O restore "https://raw.githubusercontent.com/${GitUser}/homa/main/system/restore.sh"
 chmod +x update
 chmod +x run-update
 chmod +x message-ssh
