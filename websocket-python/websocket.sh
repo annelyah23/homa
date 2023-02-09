@@ -6,14 +6,14 @@ sleep 0.5
 cd
 
 # // GIT USER
-GitUser="Internetvps"
+GitUser="annelyah23"
 namafolder="websocket-python"
 
 # // SYSTEM WEBSOCKET HTTPS 443
 cat <<EOF> /etc/systemd/system/ws-https.service
 [Unit]
 Description=Python Proxy
-Documentation=https://github.com/Internetvps/
+Documentation=https://github.com/annelyah23/
 After=network.target nss-lookup.target
 
 [Service]
@@ -33,7 +33,7 @@ EOF
 cat <<EOF> /etc/systemd/system/ws-http.service
 [Unit]
 Description=Python Proxy
-Documentation=https://github.com/Internetvps/
+Documentation=https://github.com/annelyah23/
 After=network.target nss-lookup.target
 
 [Service]
@@ -52,7 +52,7 @@ EOF
 cat <<EOF> /etc/systemd/system/ws-ovpn.service
 [Unit]
 Description=Python Proxy
-Documentation=https://github.com/Internetvps/
+Documentation=https://github.com/annelyah23/
 After=network.target nss-lookup.target
 
 [Service]
