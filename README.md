@@ -5,14 +5,14 @@
 
 ## Commands : <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=powershell&label=Shell&message=Bash%20Script&color=lightgray">
 
-## Update & Upgrade First Your VPS for Debian 10 & 11
+## Update & upgrade first your VPS for Debian 10 & 11
 
   ```html
   apt-get update && apt-get upgrade -y 
 
   ```
 
-## Update & Upgrade First Your VPS for Ubuntu 18.04 & 20.04
+## Update & upgrade First your VPS for Ubuntu 18.04 & 20.04
 
   ```html
   apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && sleep 2 && reboot
