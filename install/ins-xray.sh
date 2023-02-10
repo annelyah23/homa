@@ -70,8 +70,8 @@ curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
 chmod +x /root/.acme.sh/acme.sh
 /root/.acme.sh/acme.sh --upgrade --auto-upgrade
 /root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
-/root/.acme.sh/acme.sh --issue -d $domain -d sshws.$domain --standalone -k ec-256 --listen-v6
-~/.acme.sh/acme.sh --installcert -d $domain -d sshws.$domain --fullchainpath /usr/local/etc/xray/xray.crt --keypath /usr/local/etc/xray/xray.key --ecc
+/root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256 --listen-v6
+~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /usr/local/etc/xray/xray.crt --keypath /usr/local/etc/xray/xray.key --ecc
 chmod 755 /usr/local/etc/xray/xray.key;
 service squid start
 systemctl restart nginx
@@ -122,7 +122,7 @@ cat> /usr/local/etc/xray/config.json << END
                 "decryption": "none",
                 "fallbacks": [
                     {
-                        "name": "sshws.${domain}", # // SSH WS TLS JNGN CURI BERDOSA!!
+                        "name": "${domain}", # // SSH WS TLS JNGN CURI BERDOSA!!
                         "dest": 2091,
                         "xver": 1
                     },
@@ -131,17 +131,17 @@ cat> /usr/local/etc/xray/config.json << END
                         "xver": 1
                     },
                     {
-                        "path": "/aquagurl-vlesswstls", # // VMESS WS TLS
+                        "path": "/Jsphantom-vlesswstls", # // VMESS WS TLS
                         "dest": 1212,
                         "xver": 1
                     },
                     {
-                        "path": "/aquagurl-vmesswstls", # // VLESS WS TLS
+                        "path": "/Jsphantom-vmesswstls", # // VLESS WS TLS
                         "dest": 1213,
                         "xver": 1
                     },
                     {
-                        "path": "/aquagurl-trojanwstls", # // TROJAN WS TLS
+                        "path": "/Jsphantom-trojanwstls", # // TROJAN WS TLS
                         "dest": 1214,
                         "xver": 1
                     }
@@ -387,7 +387,7 @@ cat> /usr/local/etc/xray/vless.json << END
                 "security": "none",
                 "wsSettings": {
                     "acceptProxyProtocol": true,
-                    "path": "/aquagurl-vlesswstls"
+                    "path": "/Jsphantom-vlesswstls"
                 }
             }
         }
@@ -497,7 +497,7 @@ cat> /usr/local/etc/xray/vlessnone.json << END
          "network": "ws",
             "wsSettings": {
               "acceptProxyProtocol": true,
-                "path": "/aquagurl-vlesswsntls"
+                "path": "/Jsphantom-vlesswsntls"
 
                 }
             }
@@ -611,7 +611,7 @@ cat> /usr/local/etc/xray/vmess.json << END
                 "security": "none",
                 "wsSettings": {
                     "acceptProxyProtocol": true,
-                    "path": "/aquagurl-vmesswstls"
+                    "path": "/Jsphantom-vmesswstls"
                 }
             }
         }
@@ -721,7 +721,7 @@ cat> /usr/local/etc/xray/vmessnone.json << END
          "network": "ws",
             "wsSettings": {
               "acceptProxyProtocol": true,
-                "path": "/aquagurl-vmesswsntls"
+                "path": "/Jsphantom-vmesswsntls"
                 }
             }
         }
@@ -833,7 +833,7 @@ cat> /usr/local/etc/xray/trojan.json << END
            "network": "ws",
            "wsSettings": {
              "acceptProxyProtocol": true,
-               "path": "/aquagurl-trojanwstls"
+               "path": "/Jsphantom-trojanwstls"
              }
           }
        }
@@ -944,7 +944,7 @@ cat> /usr/local/etc/xray/trojannone.json << END
            "network": "ws",
            "wsSettings": {
              "acceptProxyProtocol": true,
-               "path": "/aquagurl-trojanwsntls"
+               "path": "/Jsphantom-trojanwsntls"
              }
           }
        }
@@ -1054,17 +1054,17 @@ cat> /usr/local/etc/xray/none.json << END
             "xver": 1
           },
           {
-            "path": "/aquagurl-vlesswsntls", # // VLESS NONE
+            "path": "/Jsphantom-vlesswsntls", # // VLESS NONE
             "dest": 1301,
             "xver": 1
           },
           {
-            "path": "/aquagurl-vmesswsntls", # // VMESS NONE
+            "path": "/Jsphantom-vmesswsntls", # // VMESS NONE
             "dest": 1302,
             "xver": 1
           },
           {
-             "path": "/aquagurl-trojanwsntls", # // TROJAN NONE
+             "path": "/Jsphantom-trojanwsntls", # // TROJAN NONE
             "dest": 1303,
             "xver": 1
           }
