@@ -27,9 +27,9 @@ clear
 apt install jq curl -y
 DOMAIN=
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}
-CF_ID=
-CF_KEY=
+SUB_DOMAIN=${sub}.
+CF_ID=aquagurl2601@gmail.com
+CF_KEY=14b348d2fd20de44e30e5c02a6ede439d6af8
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
