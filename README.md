@@ -1,9 +1,10 @@
 <p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Bungee+Spice&weight=600&size=21&pause=1000&color=FFD193FB&background=FF8F7700&center=true&width=435&height=53&lines=Script+X-ray" alt="Typing SVG" /></a>
-
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=%09%F0%9D%94%90%F0%9D%94%9E%F0%9D%94%B1%F0%9D%94%A5+%F0%9D%94%89%F0%9D%94%AF%F0%9D%94%9E%F0%9D%94%A8%F0%9D%94%B1%F0%9D%94%B2%F0%9D%94%AF&weight=800&size=32&duration=0.1&pause=1&color=F7CD1FFB&center=true&width=435&lines=%F0%9D%95%8A%CC%B6%CD%9F%CC%B6%F0%9D%95%94%CC%B6%CD%9F%CC%B6%F0%9D%95%A3%CC%B6%CD%9F%CC%B6%F0%9D%95%9A%CC%B6%CD%9F%CC%B6%F0%9D%95%A1%CC%B6%CD%9F%CC%B6%F0%9D%95%A5%CC%B6%CD%9F%CC%B6+%CC%B6%CD%9F%CC%B6%F0%9D%95%8F%CC%B6%CD%9F%CC%B6-%CC%B6%CD%9F%CC%B6%F0%9D%95%A3%CC%B6%CD%9F%CC%B6%F0%9D%95%92%CC%B6%CD%9F%CC%B6%F0%9D%95%AA%CC%B6%CD%9F%CC%B6" alt="Typing SVG" /></a>
 </p>
+<p align="center">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=%09%F0%9D%94%90%F0%9D%94%9E%F0%9D%94%B1%F0%9D%94%A5+%F0%9D%94%89%F0%9D%94%AF%F0%9D%94%9E%F0%9D%94%A8%F0%9D%94%B1%F0%9D%94%B2%F0%9D%94%AF&weight=800&size=32&duration=0.1&pause=1&color=F7CD1FFB&center=true&width=435&lines=%F0%9F%85%B9%F0%9F%86%82%F0%9F%85%BF%F0%9F%85%B7%F0%9F%85%B0%F0%9F%85%BD%F0%9F%86%83%F0%9F%85%BE%F0%9F%85%BC" alt="Typing SVG" /></a>
 
-</p><h2 align="center">🅹🆂🅿🅷🅰🅽🆃🅾🅼 AutoScript VPN <img src="https://img.shields.io/badge/Version-Senaiper_1.5-red.svg"></h2>
+# AutoScript VPN <img src="https://img.shields.io/badge/Version-Senaiper_1.5-red.svg">
 
 </p>
 
