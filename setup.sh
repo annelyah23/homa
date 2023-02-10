@@ -19,11 +19,11 @@ echo ''
 clear
 echo ''
 echo "                                                              "
-echo -e "$Lyellow                ⚡ PREMIUM AUTO SCRIPT ⚡"$NC
+echo -e "$Lred                      PREMIUM AUTO SCRIPT "$NC
 echo -e "$green.........................................................."$NC
-echo -e "$Lyellow                  Autoscript By JsPhantom"$NC
+echo -e "$Lred                      Autoscript By JsPhantom"$NC
 echo -e "$green.........................................................."$NC
-echo -e "$Lyellow                       Tunggu sbentar"$NC
+echo -e "$Lred                         Tunggu sbentar"$NC
 echo -e "$green.........................................................."$NC
 sleep 6
 clear
