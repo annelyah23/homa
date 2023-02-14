@@ -28,7 +28,7 @@ chmod +x /usr/local/bin/ohpd
 cat > /etc/systemd/system/ohpd.service <<END
 [Unit]
 Description=Direct Squid Proxy For ssh-dropbear
-Documentation=https://t.me/meaaoouuuu
+Documentation=https:/JsPhantom
 Wants=network.target
 After=network.target
 
