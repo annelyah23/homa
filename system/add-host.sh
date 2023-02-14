@@ -106,7 +106,7 @@ systemctl restart xray@none
 clear
 echo -e ""
 echo -e "\033[0;34m══════════════════════════════════════════\033[0m"
-echo -e "\E[44;1;39m        PERTUKARAN DOMAIN SELESAI         \E[0m"
+echo -e "\E[44;1;39m        DOMAIN HAS BEEN CHANGED         \E[0m"
 echo -e "\033[0;34m══════════════════════════════════════════\033[0m"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
