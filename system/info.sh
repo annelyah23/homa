@@ -1,10 +1,4 @@
 #!/bin/bash
-#wget https://github.com/${GitUser}/
-GitUser="annelyah23"
-#IZIN SCRIPT
-MYIP=$(curl -sS ipv4.icanhazip.com)
-echo -e "\e[32mloading...\e[0m"
-clear
 yl='\e[031;1m'
 bl='\e[36;1m'
 gl='\e[32;1m'
@@ -27,3 +21,11 @@ echo -e "\e[0;32m|               \e[1;35mI HOPE YOU HAPPY                \e[0;32
 echo -e "\e[0;32m|_______________________________________________\e[0;32m|\e[0m"
 echo -e "\e[0;32m|_______________\e[36;1mTHANKYOU SUPPORT\e[0m\e[0;32m________________|\e[0m"
 echo -e "               \e[0;32m'----------------'\e[0m"
+
+clear
+neofetch --ascii_distro mac
+cat /root/log-install.txt
+echo -e ""
+read -n 1 -s -r -p "  Press any key to back on menu"
+menu
+esac
