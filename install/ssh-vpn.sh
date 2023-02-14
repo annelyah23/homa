@@ -12,11 +12,11 @@ ver=$VERSION_ID
 
 # // detail nama perusahaan
 country="MY"
-state="Kelantan"
-locality="Kota Bharu"
-organization="@meaaoouuuu"
-organizationalunit="@meaaoouuuu"
-commonname="AQUAGURL"
+state="Sabah"
+locality="KK"
+organization="@btgroup"
+organizationalunit="@btgroup"
+commonname="JsPhantom"
 email="admin@aquagurl.com"
 
 # // simple password minimal

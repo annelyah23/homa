@@ -44,7 +44,7 @@ do
 	echo "You don't need to touch anything here"
 	echo "Just sit back and relax"
 	echo " "
-	echo " ### By AQUAGURL ###"
+	echo " ### By JsPhantom ###"
 	echo " "
 	echo "     [ MENU ]"
 	echo "1. Go Back"

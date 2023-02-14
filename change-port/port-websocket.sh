@@ -57,7 +57,7 @@ rm -f /etc/systemd/system/cdn-dropbear.service
 cat > /etc/systemd/system/cdn-dropbear.service <<END
 [Unit]
 Description=Python WS-Dropbear
-Documentation=https://aquagurl.me
+Documentation=https://xxx.me
 After=network.target nss-lookup.target
 
 [Service]
@@ -112,7 +112,7 @@ rm -f /etc/systemd/system/cdn-ovpn.service
 cat > /etc/systemd/system/cdn-ovpn.service <<END
 [Unit]
 Description=Python WS-Ovpn 
-Documentation=https://aquagurl.me
+Documentation=https://xxx.me
 After=network.target nss-lookup.target
 
 [Service]
