@@ -438,8 +438,8 @@ until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
 			exit 1
 		fi
 	done
-export patchtls=/aquagurl-trojanwstls
-export patchnone=/aquagurl-trojanwsntls
+export patchtls=/JsPhantom-trojanwstls
+export patchnone=/JsPhantom-trojanwsntls
 read -p "   Bug Address (Example: www.google.com) : " address
 read -p "   Bug SNI (Example : m.facebook.com) : " sni
 read -p "   Expired (days) : " masaaktif
