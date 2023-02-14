@@ -73,7 +73,7 @@ echo -e   "  \e[$line═══════════════════�
 echo -e   "  \e[$back_text          \e[30m[\e[$box CREATE USER XRAY TROJAN TCP TLS\e[30m ]\e[1m          \e[m"
 echo -e   "  \e[$line═══════════════════════════════════════════════════════\e[m"
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
-		read -rp "   Password: " -e user
+		read -rp "   username: " -e user
 		user_EXISTS=$(grep -w $user /usr/local/etc/xray/akunxtr.conf | wc -l)
 
 		if [[ ${user_EXISTS} == '1' ]]; then
@@ -98,7 +98,7 @@ export harini=`date -d "0 days" +"%Y-%m-%d"`
 export exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 
 sed -i '/#trojan$/a\#trx '"$user $exp $harini $uuid"'\
-},{"id": "'""$uuid""'","password": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/tcp.json
+},{"id": "'""$uuid""'","username": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/tcp.json
 
 echo -e "### $user $exp $harini $uuid" >> /usr/local/etc/xray/akunxtr.conf
 
@@ -167,7 +167,7 @@ fi
 export harini=`date -d "0 days" +"%Y-%m-%d"`
 
 sed -i '/#trojan$/a\#trx '"$user $exp $harini $uuid"'\
-},{"id": "'""$uuid""'","password": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/tcp.json
+},{"id": "'""$uuid""'","username": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/tcp.json
 
 echo -e "### $user $exp $harini $uuid" >> /usr/local/etc/xray/akunxtr.conf
 
@@ -456,9 +456,9 @@ export harini=`date -d "0 days" +"%Y-%m-%d"`
 export exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 
 sed -i '/#xray-trojan-tls$/a\#trws '"$user $exp $harini $uuid"'\
-},{"id": "'""$uuid""'","password": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/trojan.json
+},{"id": "'""$uuid""'","username": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/trojan.json
 sed -i '/#xray-trojan-nontls$/a\#trws '"$user $exp $harini $uuid"'\
-},{"id": "'""$uuid""'","password": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/trojannone.json
+},{"id": "'""$uuid""'","username": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/trojannone.json
 
 systemctl restart xray@trojan
 systemctl restart xray@trojannone
@@ -542,9 +542,9 @@ fi
 export harini=`date -d "0 days" +"%Y-%m-%d"`
 
 sed -i '/#xray-trojan-tls$/a\#trws '"$user $exp $harini $uuid"'\
-},{"id": "'""$uuid""'","password": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/trojan.json
+},{"id": "'""$uuid""'","username": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/trojan.json
 sed -i '/#xray-trojan-nontls$/a\#trws '"$user $exp $harini $uuid"'\
-},{"id": "'""$uuid""'","password": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/trojannone.json
+},{"id": "'""$uuid""'","username": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/trojannone.json
 
 systemctl restart xray@trojan
 systemctl restart xray@trojannone
