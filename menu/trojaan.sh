@@ -525,7 +525,7 @@ export masaaktif="1"
 export exp=$(date -d "$masaaktif days" +"%Y-%m-%d")
 export user=Trial`</dev/urandom tr -dc X-Z0-9 | head -c4`
 
-export patchtls=/aquagurl-trojanwstls
+export patchtls=/JsPhantom-trojanwstls
 export patchnone=/aquagurl-trojanwsntls
 
 read -p "   Bug Address (Example: www.google.com) : " address
