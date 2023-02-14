@@ -429,7 +429,7 @@ echo -e   "  \e[$line═══════════════════�
 echo -e   "  \e[$back_text          \e[30m[\e[$box CREATE USER XRAY TROJAN WS TLS\e[30m ]\e[1m          \e[m"
 echo -e   "  \e[$line═══════════════════════════════════════════════════════\e[m"
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
-		read -rp "   Password: " -e user
+		read -rp "   username: " -e user
 		user_EXISTS=$(grep -w $user /usr/local/etc/xray/trojan.json | wc -l)
 
 		if [[ ${user_EXISTS} == '1' ]]; then
