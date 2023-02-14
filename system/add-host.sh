@@ -55,7 +55,7 @@ echo "$host" > /usr/local/etc/xray/domain
 export dom=$(cat /etc/xray/domain)
 export domain=$(cat /usr/local/etc/xray/domain)
 
-sed -i "s/sshws.${dom}/sshws.${domain}/g" /usr/local/etc/xray/config.json;
+sed -i "s/${dom}/${domain}/g" /usr/local/etc/xray/config.json;
 rm -f /etc/xray/domain;
 echo "$host" > /etc/xray/domain
 
@@ -96,8 +96,8 @@ systemctl stop xray@none
 # // GENERATE CERT
 /root/.acme.sh/acme.sh --upgrade --auto-upgrade
 /root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
-/root/.acme.sh/acme.sh --issue -d $domain -d sshws.$domain --standalone -k ec-256 --listen-v6
-~/.acme.sh/acme.sh --installcert -d $domain -d sshws.$domain --fullchainpath /usr/local/etc/xray/xray.crt --keypath /usr/local/etc/xray/xray.key --ecc
+/root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256 --listen-v6
+~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /usr/local/etc/xray/xray.crt --keypath /usr/local/etc/xray/xray.key --ecc
 
 # // RESTART XRAY
 systemctl restart xray.service
