@@ -1,8 +1,6 @@
 #!/bin/bash
 
-echo -e "  \033[1;37m${Font_Purple}Media Stream Unlocker Test Mod By JsPhantom${Font_Suffix}\033[0m";
-echo -e "  \033[1;37mVersion : ${Font_SkyBlue}${shell_version}${Font_Suffix}\033[0m";
-echo -e "  \033[1;37mTime    : $(date)\033[0m"
+
 
 Font_Black="\033[30m"
 Font_Red="\033[31m"
@@ -13,6 +11,10 @@ Font_Purple="\033[35m"
 Font_SkyBlue="\033[36m"
 Font_White="\033[37m"
 Font_Suffix="\033[0m"
+
+echo -e "  \033[1;37m${Font_Purple}Media Stream Unlocker Test Mod By JsPhantom${Font_Suffix}\033[0m";
+echo -e "  \033[1;37mVersion : ${Font_SkyBlue}${shell_version}${Font_Suffix}\033[0m";
+echo -e "  \033[1;37mTime    : $(date)\033[0m"
 
 uptime="$(uptime -p | cut -d " " -f 2-10)"
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10)
