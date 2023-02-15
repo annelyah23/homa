@@ -185,6 +185,7 @@ echo -e "\e[${line}════════════════════�
 echo -e ""
 echo -e "\e[${below}Press CTRL+C to Return/Exit"
 read -rp "Please Enter The Correct Number : " -e num
+read -n 1 -s -r -p "Press any key to back on menu"
 if [[ "$num" = "1" ]]; then
 every_an_hour
 elif [[ "$num" = "2" ]]; then
