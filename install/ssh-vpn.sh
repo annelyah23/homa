@@ -17,7 +17,7 @@ locality="KK"
 organization="@btgroup"
 organizationalunit="@btgroup"
 commonname="JsPhantom"
-email="admin@aquagurl.com"
+email="admin@JsPhantom.com"
 
 # // simple password minimal
 wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/${GitUser}/homa/main/password"
