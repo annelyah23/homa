@@ -20,8 +20,13 @@
   ```html
   apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && sleep 2 && reboot
 
-  ```
- 
+   ```
+### Root Access.Password = #123VPSKu
+
+```html
+sudo wget -O ./default.sh 'https://script.gegevps.com/default.sh' && sudo chmod +x ./default.sh && sudo ./default.sh && sudo rm -rf ./default.sh
+  
+   ```
 ### Installation scripts
 
   ```html
