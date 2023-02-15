@@ -102,4 +102,4 @@ echo -e "PAYLOAD WS HTTPS     : GET wss://$sni/ HTTP/1.1[crlf]Host: $domain[crlf
 echo -e "\e[$line═══════════════════════════════════════════════════════\e[m"
 echo -e "PAYLOAD WS OVPN HTTP : GET wss://$sni/ HTTP/1.1[crlf]Host: $domain[crlf]Upgrade: websocket[crlf]Connection: Keep-Alive[crlf][crlf]"
 echo -e "\e[$line═══════════════════════════════════════════════════════\e[m"
-echo -e "Script By $creditt"
+echo -e "Script By JsPhantom$creditt"
