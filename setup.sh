@@ -20,11 +20,11 @@ clear
 echo ''
 echo "                                                              "
 echo -e "$Lred                   ⏩ PREMIUM AUTO SCRIPT "$NC
-echo -e "$green━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"$NC
+echo -e "$ORANGE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"$NC
 echo -e "$Lred                 ⏩ Autoscript By JsPhantom"$NC
-echo -e "$green━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"$NC
+echo -e "$ORANGE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"$NC
 echo -e "$Lred                       ⏩ Wait a sec"$NC
-echo -e "$green━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"$NC
+echo -e "$ORANGE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"$NC
 sleep 6
 clear
 if [ "${EUID}" -ne 0 ]; then
