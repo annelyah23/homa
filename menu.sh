@@ -122,7 +122,7 @@ ascii=$(cat /usr/bin/test)
 clear
 echo -e "\e[$banner_colour"
 figlet -f $ascii "$banner"
-echo -e "\e[$text                 PREMIUM-SERVER-SCRIPT-BY-JsPhantom"
+echo -e "\e[$text               ⏩ PREMIUM-SERVER-SCRIPT-BY-JsPhantom ⏪"
 echo -e " \e[$line════════════════════════════════════════════════════════════════════\e[m"
 echo -e "  \e[$text Cpu Model            :$cname"
 echo -e "  \e[$text Cpu Frequency        :$freq MHz"
