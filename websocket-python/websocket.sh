@@ -1,7 +1,7 @@
 clear
 echo Installing Websocket-SSH Python
 sleep 1
-echo Sila Tunggu Sebentar...
+echo Please Wait...
 sleep 0.5
 cd
 
