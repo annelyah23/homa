@@ -73,7 +73,7 @@ echo -e   "  \e[$line═══════════════════�
 echo -e   "  \e[$back_text          \e[30m[\e[$box CREATE USER XRAY TROJAN TCP TLS\e[30m ]\e[1m          \e[m"
 echo -e   "  \e[$line═══════════════════════════════════════════════════════\e[m"
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
-		read -rp "   username: " -e user
+		read -rp "   Password: " -e user
 		user_EXISTS=$(grep -w $user /usr/local/etc/xray/akunxtr.conf | wc -l)
 
 		if [[ ${user_EXISTS} == '1' ]]; then
@@ -98,7 +98,7 @@ export harini=`date -d "0 days" +"%Y-%m-%d"`
 export exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 
 sed -i '/#trojan$/a\#trx '"$user $exp $harini $uuid"'\
-},{"id": "'""$uuid""'","username": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/tcp.json
+},{"id": "'""$uuid""'","password": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/tcp.json
 
 echo -e "### $user $exp $harini $uuid" >> /usr/local/etc/xray/akunxtr.conf
 
@@ -116,7 +116,7 @@ echo -e "Key           : ${user}"
 echo -e "Network       : TCP"
 echo -e "allowInsecure : True/allow"
 echo -e "\e[$line═════════════════════════════════\e[m"
-echo -e "Pantang Larang $creditt Shop"
+echo -e "Pantang Larang $creditt VPN"
 echo -e "‼️Aktiviti Berikut Adalah Dilarang(ID akan di ban tanpa notis & tiada refund)"
 echo -e "\e[31m❌ Torrent (p2p, streaming p2p)"
 echo -e "\e[31m❌ PS4"
@@ -167,7 +167,7 @@ fi
 export harini=`date -d "0 days" +"%Y-%m-%d"`
 
 sed -i '/#trojan$/a\#trx '"$user $exp $harini $uuid"'\
-},{"id": "'""$uuid""'","username": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/tcp.json
+},{"id": "'""$uuid""'","password": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/tcp.json
 
 echo -e "### $user $exp $harini $uuid" >> /usr/local/etc/xray/akunxtr.conf
 
@@ -186,7 +186,7 @@ echo -e "Key           : ${user}"
 echo -e "Network       : TCP"
 echo -e "allowInsecure : True/allow"
 echo -e "\e[$line═════════════════════════════════\e[m"
-echo -e "Pantang Larang $creditt Shop"
+echo -e "Pantang Larang $creditt VPN"
 echo -e "‼️Aktiviti Berikut Adalah Dilarang(ID akan di ban tanpa notis & tiada refund)"
 echo -e "\e[31m❌ Torrent (p2p, streaming p2p)"
 echo -e "\e[31m❌ PS4"
@@ -355,7 +355,7 @@ echo -e "Key            : ${user}"
 echo -e "Network        : TCP"
 echo -e "allowInsecure  : True"
 echo -e "\e[$line═════════════════════════════════\e[m"
-echo -e "Pantang Larang $creditt Shop"
+echo -e "Pantang Larang $creditt VPN"
 echo -e "‼️Aktiviti Berikut Adalah Dilarang(ID akan di ban tanpa notis & tiada refund)"
 echo -e "\e[31m❌ Torrent (p2p, streaming p2p)"
 echo -e "\e[31m❌ PS4"
@@ -429,7 +429,7 @@ echo -e   "  \e[$line═══════════════════�
 echo -e   "  \e[$back_text          \e[30m[\e[$box CREATE USER XRAY TROJAN WS TLS\e[30m ]\e[1m          \e[m"
 echo -e   "  \e[$line═══════════════════════════════════════════════════════\e[m"
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
-		read -rp "   username: " -e user
+		read -rp "   Password: " -e user
 		user_EXISTS=$(grep -w $user /usr/local/etc/xray/trojan.json | wc -l)
 
 		if [[ ${user_EXISTS} == '1' ]]; then
@@ -456,7 +456,7 @@ export harini=`date -d "0 days" +"%Y-%m-%d"`
 export exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 
 sed -i '/#xray-trojan-tls$/a\#trws '"$user $exp $harini $uuid"'\
-},{"id": "'""$uuid""'","username": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/trojan.json
+},{"id": "'""$uuid""'","password": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/trojan.json
 sed -i '/#xray-trojan-nontls$/a\#trws '"$user $exp $harini $uuid"'\
 },{"id": "'""$uuid""'","username": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/trojannone.json
 
@@ -483,7 +483,7 @@ echo -e "Path Tls      : $patchtls"
 echo -e "Path Ntls     : $patchnone"
 echo -e "allowInsecure : True/allow"
 echo -e "\e[$line═════════════════════════════════\e[m"
-echo -e "Pantang Larang $creditt Shop"
+echo -e "Pantang Larang $creditt VPN"
 echo -e "‼️Aktiviti Berikut Adalah Dilarang(ID akan di ban tanpa notis & tiada refund)"
 echo -e "\e[31m❌ Torrent (p2p, streaming p2p)"
 echo -e "\e[31m❌ PS4"
@@ -542,7 +542,7 @@ fi
 export harini=`date -d "0 days" +"%Y-%m-%d"`
 
 sed -i '/#xray-trojan-tls$/a\#trws '"$user $exp $harini $uuid"'\
-},{"id": "'""$uuid""'","username": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/trojan.json
+},{"id": "'""$uuid""'","password": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/trojan.json
 sed -i '/#xray-trojan-nontls$/a\#trws '"$user $exp $harini $uuid"'\
 },{"id": "'""$uuid""'","username": "'""$user""'","email": "'""$user""'"' /usr/local/etc/xray/trojannone.json
 
@@ -569,7 +569,7 @@ echo -e "Path Tls      : $patchtls"
 echo -e "Path Ntls     : $patchnone"
 echo -e "allowInsecure : True/allow"
 echo -e "\e[$line═════════════════════════════════\e[m"
-echo -e "Pantang Larang $creditt Shop"
+echo -e "Pantang Larang $creditt VPN"
 echo -e "‼️Aktiviti Berikut Adalah Dilarang(ID akan di ban tanpa notis & tiada refund)"
 echo -e "\e[31m❌ Torrent (p2p, streaming p2p)"
 echo -e "\e[31m❌ PS4"
@@ -750,7 +750,7 @@ echo -e "Path Tls      : $patchtls"
 echo -e "Path Ntls     : $patchnone"
 echo -e "allowInsecure : True/allow"
 echo -e "\e[$line═════════════════════════════════\e[m"
-echo -e "Pantang Larang $creditt Shop"
+echo -e "Pantang Larang $creditt VPN"
 echo -e "‼️Aktiviti Berikut Adalah Dilarang(ID akan di ban tanpa notis & tiada refund)"
 echo -e "\e[31m❌ Torrent (p2p, streaming p2p)"
 echo -e "\e[31m❌ PS4"
