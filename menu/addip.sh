@@ -96,7 +96,7 @@ fi
 
 daftarip=$(cat /root/data)
 rm -rf /root/allow
-git config --global user.email "kingthor87@gmail.com"
+git config --global user.email "annelyah23@class.myschool.studio"
 git config --global user.name "annelyah23"
 git clone https://github.com/annelyah23/allow.git
 mkdir /root/allow
@@ -165,7 +165,7 @@ clear
 rm -rf /root/allow
 rm -rf /root/data
 rm -rf /root/ipvps.conf
-git config --global user.email "kingthor87@gmail.com"
+git config --global user.email "annelyah23@class.myschool.studio"
 git config --global user.name "annelyah23"
 git clone https://github.com/annelyah23/allow.git
 mkdir /root/allow
@@ -220,7 +220,7 @@ exit 0
 fi
 clear
 rm -rf /root/allow
-git config --global user.email "kingthor87@gmail.com"
+git config --global user.email "annelyah23@class.myschool.studio"
 git config --global user.name "annelyah23"
 git clone https://github.com/annelyah23/allow.git
   mkdir /root/allow
@@ -299,7 +299,7 @@ clear
 rm -rf /root/allow
 rm -rf /root/data
 rm -rf /root/ipvps.conf
-git config --global user.email "kingthor87@gmail.com"
+git config --global user.email "annelyah23@class.myschool.studio"
 git config --global user.name "annelyah23"
 git clone https://github.com/annelyah23/allow.git
 cd /root/allow/
