@@ -6,7 +6,7 @@
 
 # AutoScript VPN <img src="https://img.shields.io/badge/Version-Senaiper_1.5-red.svg">
 
-</p>
+## Register IP (PM your username & IP):<a href="https://t.me/jsPhantom" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
 
 ### Update & upgrade first your VPS for Debian 10 & 11
 
