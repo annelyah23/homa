@@ -1,4 +1,4 @@
-#wget https://github.com/${GitUser}/
+#!/bin/bash
 GitUser="annelyah23"
 # Color Validation
 Lred='\e[1;91m'
