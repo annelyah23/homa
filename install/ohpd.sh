@@ -19,11 +19,6 @@ Port_OpenVPN_TCP='442';
 Port_Squid='8080';
 Port_OHP='8000';
 
-#Installing ohp Server
-cd 
-wget -O /usr/local/bin/ohpd "https://raw.githubusercontent.com/${GitUser}/homa/main/ohpd.sh"
-chmod +x /usr/local/bin/ohpd
-
 #Buat Service Untuk OHP Dropbear
 cat > /etc/systemd/system/ohpd.service <<END
 [Unit]
