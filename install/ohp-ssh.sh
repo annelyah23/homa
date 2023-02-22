@@ -16,8 +16,8 @@ apt-get -y upgrade
 #Port Server ovpn ohp
 #Jika Ingiin Mengubah Port Silahkan Sesuaikan Dengan Port Yang Ada Di VPS Mu
 Port_OpenVPN_TCP='22';
-Port_Squid='3128';
-Port_OHP='8686';
+Port_Squid='8080';
+Port_OHP='8000';
 
 #Installing ohp Server
 cd 
@@ -33,7 +33,7 @@ Wants=network.target
 After=network.target
 
 [Service]
-ExecStart=/usr/local/bin/ohp -port 8686 -proxy 127.0.0.1:3128 -tunnel 127.0.0.1:22
+ExecStart=/usr/local/bin/ohp -port 8000 -proxy 127.0.0.1:3128 -tunnel 127.0.0.1:22
 Restart=always
 RestartSec=3
 
