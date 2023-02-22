@@ -1,7 +1,5 @@
-# ==================================================
-#wget https://github.com/${GitUser}/
+#!/bin/bash
 GitUser="annelyah23"
-
 # // initializing var
 export DEBIAN_FRONTEND=noninteractive
 MYIP=$(wget -qO- icanhazip.com);
