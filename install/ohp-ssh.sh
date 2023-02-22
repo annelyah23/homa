@@ -1,4 +1,4 @@
-#wget https://github.com/${GitUser}/
+#!/bin/bash
 GitUser="annelyah23"
 #Direct Proxy Squid For OpenVPN TCP
 RED='\e[1;31m'
