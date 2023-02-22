@@ -1,4 +1,4 @@
-# Created by drgvpn
+#!/bin/bash
 #wget https://github.com/${GitUser}/
 GitUser="annelyah23"
 #IZIN SCRIPT
