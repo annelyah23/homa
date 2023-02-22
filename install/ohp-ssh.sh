@@ -20,9 +20,10 @@ Port_Squid='8080';
 Port_OHP='8000';
 
 #Installing ohp Server
-cd 
-wget -O /usr/local/bin/ohps "https://raw.githubusercontent.com/${GitUser}/homa/main/ohps"
-chmod +x /usr/local/bin/ohps
+# Download File Ohp
+cd
+wget -O /usr/local/bin/ohpserver "https://raw.githubusercontent.com/annelyah23/homa/main/ohpserver"
+chmod +x /usr/local/bin/ohpserver
 
 #Buat Service Untuk OHP SSH
 cat > /etc/systemd/system/ohps.service <<END
@@ -33,7 +34,7 @@ Wants=network.target
 After=network.target
 
 [Service]
-ExecStart=/usr/local/bin/ohp -port 8000 -proxy 127.0.0.1:3128 -tunnel 127.0.0.1:22
+ExecStart=/usr/local/bin/ohpserver -port 8000 -proxy 127.0.0.1:3128 -tunnel 127.0.0.1:22
 Restart=always
 RestartSec=3
 
