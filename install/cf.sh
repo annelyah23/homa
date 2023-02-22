@@ -25,7 +25,7 @@ exit 0
 fi
 clear
 apt install jq curl -y
-DOMAIN=btvpn.tech
+DOMAIN=
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 SUB_DOMAIN=${sub}.bt-group.tk
 CF_ID=kingthor87@gmail.com
