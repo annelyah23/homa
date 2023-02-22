@@ -19,7 +19,7 @@ Port_OHP='8000';
 cat > /etc/systemd/system/ohp.service <<END
 [Unit]
 Description=Direct Squid Proxy For OpenVPN TCP
-Documentation=https://xxx.com
+Documentation=https:JsPhantom
 Wants=network.target
 After=network.target
 
