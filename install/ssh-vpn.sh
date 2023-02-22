@@ -131,8 +131,8 @@ echo "/usr/sbin/nologin" >> /etc/shells
 /etc/init.d/dropbear restart
 
 # install squid for debian 11
-apt -y install squid
-wget -q -O /etc/squid/squid.conf "https://raw.githubusercontent.com/${GitUser}/homa/main/squid.conf"
+apt -y install squid3
+wget -q -O /etc/squid/squid.conf "https://raw.githubusercontent.com/annelyah23/homa/main/squid.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # // setting vnstat
