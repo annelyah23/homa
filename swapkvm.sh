@@ -1,3 +1,4 @@
+#!/bin/bash
 dd if=/dev/zero of=/swapfile1 bs=1024 count=524288
 dd if=/dev/zero of=/swapfile2 bs=1024 count=524288
 mkswap /swapfile1
