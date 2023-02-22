@@ -1,4 +1,4 @@
-#wget https://github.com/${GitUser}/
+#!/bin/bash
 GitUser="annelyah23"
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
