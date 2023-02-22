@@ -9,7 +9,7 @@ red='\e[1;31m'
 green='\e[0;32m'
 purple='\e[0;35m'
 orange='\e[0;33m'
-NC='\e[0m
+NC='\e[0m'
 clear
 echo -e "\e[32mloading...\e[0m"
 clear
