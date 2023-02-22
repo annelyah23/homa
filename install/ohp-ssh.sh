@@ -8,11 +8,6 @@ NC='\e[0m'
 MYIP=$(wget -qO- https://icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 
-#Update Repository VPS
-clear
-apt update 
-apt-get -y upgrade
-
 #Port Server ovpn ohp
 #Jika Ingiin Mengubah Port Silahkan Sesuaikan Dengan Port Yang Ada Di VPS Mu
 Port_OpenVPN_TCP='1194';
@@ -48,4 +43,3 @@ systemctl restart ohps
 echo ""
 echo -e "${GREEN}Done Installing OHP OpenSSH${NC}"
 echo -e "Port OHP OpenSSH: $ohpp"
-
