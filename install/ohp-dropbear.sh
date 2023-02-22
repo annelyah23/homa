@@ -7,7 +7,7 @@ BLUE='\e[0;34m'
 NC='\e[0m'
 MYIP=$(wget -qO- https://icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
-domain=$(cat /etc/v2ray/domain)
+domain=$(cat /root/domain)
 #Update Repository VPS
 clear
 apt update 
@@ -16,8 +16,8 @@ apt-get -y upgrade
 #Port Server ovpn ohp
 #Jika Ingiin Mengubah Port Silahkan Sesuaikan Dengan Port Yang Ada Di VPS Mu
 Port_OpenVPN_TCP='1194';
-Port_Squid='3128';
-Port_OHP='8787';
+Port_Squid='8080';
+Port_OHP='8000';
 
 #Installing ohp Server
 cd 
@@ -29,6 +29,7 @@ cat > /etc/openvpn/client-tcp-ohp1194.ovpn <<END
 client
 dev tun
 proto tcp
+setenv FRIENDLY_NAME "JsPhantom net"
 remote "bug.com" 1194
 resolv-retry infinite
 route-method exe
@@ -41,15 +42,6 @@ persist-tun
 auth-user-pass
 comp-lzo
 verb 3
-
-setenv FRIENDLY_NAME "OVPN OHP"
-http-proxy $MYIP 8787
-http-proxy-option CUSTOM-HEADER CONNECT HTTP/1.1
-http-proxy-option CUSTOM-HEADER Host bug.com
-http-proxy-option CUSTOM-HEADER X-Online-Host bug.com
-http-proxy-option CUSTOM-HEADER X-Forward-Host bug.com
-http-proxy-option CUSTOM-HEADER Connection: keep-alive
-END
 
 sed -i $MYIP2 /etc/openvpn/client-tcp-ohp1194.ovpn;
 
