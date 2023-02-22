@@ -1,4 +1,4 @@
-clear
+#!/bin/bash
 echo Installing Websocket-SSH Python
 sleep 1
 echo Please Wait...
