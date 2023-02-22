@@ -1205,7 +1205,7 @@ wget -O certv2ray "https://raw.githubusercontent.com/${GitUser}/homa/main/cert.s
 wget -O trojaan "https://raw.githubusercontent.com/${GitUser}/homa/main/menu/trojaan.sh"
 wget -O xraay "https://raw.githubusercontent.com/${GitUser}/homa/main/menu/xraay.sh"
 chmod +x port-xray
-chmod +x certv2ray
+chmod +x cert
 chmod +x trojaan
 chmod +x xraay
 
