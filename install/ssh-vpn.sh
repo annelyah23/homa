@@ -132,12 +132,9 @@ echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
 /etc/init.d/dropbear restart
 
-# // install squid for debian 9,10 & ubuntu 20.04
-apt -y install squid3
-
 # install squid for debian 11
 apt -y install squid
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/${GitUser}/homa/main/squid3.conf"
+wget -q -O /etc/squid/squid.conf "https://raw.githubusercontent.com/${GitUser}/homa/main/squid.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # // setting vnstat
@@ -158,6 +155,7 @@ rm -f /root/vnstat-2.6.tar.gz
 rm -rf /root/vnstat-2.6
 
 # // install stunnel
+mkdir /etc/stunnel
 apt install stunnel4 -y
 cat > /etc/stunnel/stunnel.conf <<-END
 cert = /etc/stunnel/stunnel.pem
@@ -196,11 +194,13 @@ systemctl start stunnel4
 /etc/init.d/stunnel4 restart
 
 # // OpenVPN
-wget https://raw.githubusercontent.com/${GitUser}/homa/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
-
+wget -q -o /root/vpn.sh "https://raw.githubusercontent.com/${GitUser}/homa/main/vpn.sh"
+chmod +x vpn.sh
+./vpn.sh
 # // install lolcat
-wget https://raw.githubusercontent.com/${GitUser}/homa/main/lolcat.sh &&  chmod +x lolcat.sh && ./lolcat.sh
-
+wget -q -o /root/lolcat.sh "https://raw.githubusercontent.com/${GitUser}/homa/main/lolcat.sh"
+chmod +x lolcat.sh
+./lolcat.sh
 # // install fail2ban
 apt -y install fail2ban
 
@@ -232,15 +232,9 @@ echo 'Config file is at /usr/local/ddos/ddos.conf'
 echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 
 # // banner /etc/issue.net
-wget -O /etc/issue.net "https://raw.githubusercontent.com/${GitUser}/homa/main/banner/bannerssh.conf"
+wget -q -O /etc/issue.net "https://raw.githubusercontent.com/${GitUser}/homa/main/banner/bannerssh.conf"
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
-
-# // Bannerku menu
-wget -O /usr/bin/bannerku https://raw.githubusercontent.com/${GitUser}/homa/main/banner/bannerku && chmod +x /usr/bin/bannerku
-
-# // install bbr
-wget https://raw.githubusercontent.com/${GitUser}/homa/main/system/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
 # // blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
@@ -310,6 +304,7 @@ wget -O run-update "https://raw.githubusercontent.com/${GitUser}/homa/main/updat
 wget -O message-ssh "https://raw.githubusercontent.com/${GitUser}/homa/main/update/message-ssh.sh"
 wget -O dns "https://raw.githubusercontent.com/${GitUser}/homa/main/system/dns.sh"
 wget -O nf "https://raw.githubusercontent.com/${GitUser}/homa/main/system/nf.sh"
+wget -O bannerku "https://raw.githubusercontent.com/${GitUser}/homa/main/banner/bannerku"
 chmod +x add-host
 chmod +x menu
 chmod +x add-ssh
@@ -360,6 +355,7 @@ chmod +x run-update
 chmod +x message-ssh
 chmod +x dns
 chmod +x nf
+chmod +x bannerku
 echo "0 0 * * * root delete" >> /etc/crontab
 echo "*/2 * * * * root clear-log" >> /etc/crontab
 echo "0 5 * * * root reboot" >> /etc/crontab
