@@ -1,4 +1,3 @@
-# Script VPS
 #!/bin/bash
 clear
 MAX=1
