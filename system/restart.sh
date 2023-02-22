@@ -1,4 +1,4 @@
-#wget https://github.com/${GitUser}/
+#!/bin/bash
 GitUser="annelyah23"
 #Colour
 white='\e[0;37m'
