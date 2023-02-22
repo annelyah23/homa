@@ -1211,7 +1211,6 @@ chmod +x xraay
 
 cd
 rm -f ins-xray.sh
-mv /root/domain /usr/local/etc/xray/domain
-cp /usr/local/etc/xray/domain /etc/xray/domain
+cp /root/domain /usr/local/etc/xray/domain
 sleep 1
 clear;
