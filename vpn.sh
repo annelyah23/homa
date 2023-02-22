@@ -1,4 +1,4 @@
-#wget https://github.com/${GitUser}/
+#!/bin/bash
 GitUser="annelyah23"
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive
