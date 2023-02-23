@@ -193,9 +193,8 @@ systemctl start stunnel4
 /etc/init.d/stunnel4 restart
 
 # // OpenVPN
-wget -q -o /root/vpn.sh "https://raw.githubusercontent.com/${GitUser}/homa/main/vpn.sh"
-chmod +x vpn.sh
-./vpn.sh
+wget https://raw.githubusercontent.com/${GitUser}/homa/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+
 # // install lolcat
 wget -q -o /root/lolcat.sh "https://raw.githubusercontent.com/${GitUser}/homa/main/lolcat.sh"
 chmod +x lolcat.sh
