@@ -146,32 +146,23 @@ sleep 2
 #install ssh ovpn
 echo -e "\e[0;32mINSTALLING SSH & OVPN...\e[0m"
 sleep 1
-wget -q -O /root/ssh-vpn.sh "https://raw.githubusercontent.com/${GitUser}/homa/main/install/ssh-vpn.sh"
-chmod +x /root/ssh-vpn.sh
-./ssh-vpn.sh
+wget https://raw.githubusercontent.com/annelyah23/homa/main/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 echo -e "\e[0;32mDONE INSTALLING SSH & OVPN\e[0m"
 clear
 #install Xray
 echo -e "\e[0;32mINSTALLING XRAY CORE...\e[0m"
 sleep 1
-wget -q -O /root/ins-xray.sh "https://raw.githubusercontent.com/${GitUser}/homa/main/install/ins-xray.sh"
-chmod +x ins-xray.sh
-./ins-xray.sh
+wget https://raw.githubusercontent.com/annelyah23/homa/main/install/ins-xray.sh && chmod +x ins-xray.sh && screen -S ins-xray ./ins-xray.sh
 echo -e "\e[0;32mDONE INSTALLING XRAY CORE\e[0m"
 clear
 #install ohp-server
 echo -e "\e[0;32mINSTALLING OHP PORT...\e[0m"
 sleep 1
-wget -q -O /root/ohp-ssh.sh "https://raw.githubusercontent.com/${GitUser}/homa/main/install/ohp-ssh.sh"
-chmod +x ohp-ssh.sh
-./ohp-ssh.sh
-wget -q -O /root/ohp.sh "https://raw.githubusercontent.com/${GitUser}/homa/main/install/ohp.sh"
-chmod +x ohp.sh
-./ohp.sh
-clear
-wget -q -O /root/ohp-dropbear.sh "https://raw.githubusercontent.com/${GitUser}/homa/main/install/ohp-dropbear.sh"
-chmod +x ohp-dropbear.sh
-./ohp-dropbear.sh
+wget -O /usr/local/bin/ohpserver "https://raw.githubusercontent.com/annelyah23/homa/main/ohpserver"
+chmod +x /usr/local/bin/ohpserver
+wget https://raw.githubusercontent.com/annelyah23/homa/main/install/ohp.sh && chmod +x ohp.sh && ./ohp.sh
+wget https://raw.githubusercontent.com/annelyah23/homa/main/install/ohpd.sh && chmod +x ohpd.sh && ./ohpd.sh
+wget https://raw.githubusercontent.com/annelyah23/homa/main/install/ohp-ssh.sh && chmod +x ohp-ssh.sh && ./ohp-ssh.sh
 clear
 echo -e "\e[0;32mDONE INSTALLING OHP PORT\e[0m"
 clear
@@ -191,7 +182,7 @@ chmod +x set-br.sh
 echo -e "\e[0;32mDONE INSTALLING SET-BR...\e[0m"
 clear
 # set time GMT +8
-ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur/etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur/ etc/localtime
 # install clouflare JQ
 apt install jq curl -y
 # install webserver
