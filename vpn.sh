@@ -11,15 +11,15 @@ domain=$(cat /root/domain)
 # Install OpenVPN dan Easy-RSA
 apt install openvpn easy-rsa unzip -y
 apt install openssl iptables iptables-persistent -y
-mkdir -p /etc/openvpn/server/easy-rsa/
+mkdir -p /etc/openvpn/server/easy-rsa
 cd /etc/openvpn/
 wget -q -O certi.zip "https://raw.githubusercontent.com/${GitUser}/homa/main/vpn.zip"
 unzip -o certi.zip
 rm -f certi.zip
-chown -R root:root /etc/openvpn/server/easy-rsa/
+chown -R root:root /etc/openvpn/server/easy-rsa
 
 cd
-mkdir -p /usr/lib/openvpn/
+mkdir -p /usr/lib/openvpn
 cp /usr/lib/x86_64-linux-gnu/openvpn/plugins/openvpn-plugin-auth-pam.so /usr/lib/openvpn/openvpn-plugin-auth-pam.so
 
 # nano /etc/default/openvpn
@@ -58,8 +58,8 @@ END
 sed -i $MYIP2 /etc/openvpn/client-tcp-1194.ovpn;
 
 # Buat config client UDP 2200
+cat > /etc/openvpn/udp.ovpn <<-END
 setenv FRIENDLY_NAME "JsPhantom net"
-setenv FRIENDLY_NAME "OVPN UDP"
 client
 dev tun
 proto udp
