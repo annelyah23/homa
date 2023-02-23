@@ -178,7 +178,6 @@ connect = 127.0.0.1:1194
 [kontol-stunnel]
 accept = 2096
 connect = 127.0.0.1:2091
-
 END
 
 # // make a certificate
