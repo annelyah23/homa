@@ -18,7 +18,6 @@ NC='\033[0;37m'
 echo ''
 clear
 echo ''
-echo "                                                              "
 echo -e "$Lred                   ⏩ PREMIUM AUTO SCRIPT "$NC
 echo -e "$ORANGE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"$NC
 echo -e "$Lred                 ⏩ Autoscript By JsPhantom"$NC
@@ -163,6 +162,9 @@ clear
 #install ohp-server
 echo -e "\e[0;32mINSTALLING OHP PORT...\e[0m"
 sleep 1
+wget -q -O /root/ohp-ssh.sh "https://raw.githubusercontent.com/${GitUser}/homa/main/install/ohp-ssh.sh"
+chmod +x ohp-ssh.sh
+./ohp-ssh.sh
 wget -q -O /root/ohp.sh "https://raw.githubusercontent.com/${GitUser}/homa/main/install/ohp.sh"
 chmod +x ohp.sh
 ./ohp.sh
@@ -171,9 +173,6 @@ wget -q -O /root/ohp-dropbear.sh "https://raw.githubusercontent.com/${GitUser}/h
 chmod +x ohp-dropbear.sh
 ./ohp-dropbear.sh
 clear
-wget -q -O /root/ohp-ssh.sh "https://raw.githubusercontent.com/${GitUser}/homa/main/install/ohp-ssh.sh"
-chmod +x ohp-ssh.sh
-./ohp-ssh.sh
 echo -e "\e[0;32mDONE INSTALLING OHP PORT\e[0m"
 clear
 #install websocket
