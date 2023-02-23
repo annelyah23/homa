@@ -234,6 +234,12 @@ wget -q -O /etc/issue.net "https://raw.githubusercontent.com/${GitUser}/homa/mai
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
+# // Bannerku menu
+wget -O /usr/bin/bannerku https://raw.githubusercontent.com/${GitUser}/homa/main/banner/bannerku && chmod +x /usr/bin/bannerku
+
+# // install bbr
+wget https://raw.githubusercontent.com/${GitUser}/homa/main/system/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+
 # // blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
 iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
