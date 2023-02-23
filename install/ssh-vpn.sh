@@ -70,7 +70,7 @@ apt-get remove --purge exim4 -y
 apt -y install wget curl
 
 # // set time GMT +8
-ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur/etc/localtime
 
 # // set locale
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
@@ -155,6 +155,7 @@ rm -rf /root/vnstat-2.6
 # // install stunnel
 mkdir /etc/stunnel
 apt install stunnel4 -y
+
 cat > /etc/stunnel/stunnel.conf <<-END
 cert = /etc/stunnel/stunnel.pem
 client = no
@@ -177,6 +178,7 @@ connect = 127.0.0.1:1194
 [kontol-stunnel]
 accept = 2096
 connect = 127.0.0.1:2091
+
 END
 
 # // make a certificate
