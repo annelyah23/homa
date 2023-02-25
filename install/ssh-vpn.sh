@@ -132,7 +132,7 @@ echo "/usr/sbin/nologin" >> /etc/shells
 
 # install squid for debian 11
 apt -y install squid3
-wget -q -O /etc/squid/squid.conf "https://raw.githubusercontent.com/annelyah23/homa/main/squid.conf"
+wget -q -O /etc/squid/squid.conf "https://raw.githubusercontent.com/annelyah23/homa/main/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # // setting vnstat
@@ -193,7 +193,7 @@ systemctl start stunnel4
 /etc/init.d/stunnel4 restart
 
 # // OpenVPN
-wget https://raw.githubusercontent.com/${GitUser}/homa/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/${GitUser}/homa/main/vpn.sh && chmod +x vpn.sh && ./vpn.sh
 
 # // install lolcat
 wget -q -o /root/lolcat.sh "https://raw.githubusercontent.com/${GitUser}/homa/main/lolcat.sh"
@@ -297,7 +297,7 @@ wget -O swap "https://raw.githubusercontent.com/${GitUser}/homa/main/swapkvm.sh"
 wget -O check-sc "https://raw.githubusercontent.com/${GitUser}/homa/main/system/running.sh"
 wget -O ssh "https://raw.githubusercontent.com/${GitUser}/homa/main/menu/ssh.sh"
 wget -O autoreboot "https://raw.githubusercontent.com/${GitUser}/homa/main/system/autoreboot.sh"
-wget -O bbr "https://raw.githubusercontent.com/${GitUser}/homa/main/system/bbr.sh"
+#wget -O bbr "https://raw.githubusercontent.com/${GitUser}/homa/main/system/bbr.sh"
 wget -O port-ohp "https://raw.githubusercontent.com/${GitUser}/homa/main/change-port/port-ohp.sh"
 wget -O port-xray "https://raw.githubusercontent.com/${GitUser}/homa/main/change-port/port-xray.sh"
 wget -O panel-domain "https://raw.githubusercontent.com/${GitUser}/homa/main/menu/panel-domain.sh"
@@ -348,7 +348,7 @@ chmod +x swap
 chmod +x check-sc
 chmod +x ssh
 chmod +x autoreboot
-chmod +x bbr
+#chmod +x bbr
 chmod +x port-ohp
 chmod +x port-xray
 chmod +x panel-domain
