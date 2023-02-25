@@ -1150,50 +1150,6 @@ cat> /usr/local/etc/xray/none.json << END
 }
 END
 
-rm -rf /etc/systemd/system/xray.service.d
-rm -rf /etc/systemd/system/xray@.service.d
-
-cat> /etc/systemd/system/xray.service << END
-[Unit]
-Description=XRAY-Websocket Service
-Documentation=https://JsPhantom-Project.net https://github.com/XTLS/Xray-core
-After=network.target nss-lookup.target
-[Service]
-User=root
-CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
-AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
-NoNewPrivileges=true
-ExecStart=/usr/local/bin/xray run -config /usr/local/etc/xray/config.json
-Restart=on-failure
-RestartSec=3s
-RestartPreventExitStatus=23
-LimitNPROC=10000
-LimitNOFILE=1000000
-[Install]
-WantedBy=multi-user.target
-END
-
-cat> /etc/systemd/system/xray@.service << END
-[Unit]
-Description=XRAY-Websocket Service
-Documentation=https://JsPhantom-Project.net https://github.com/XTLS/Xray-core
-After=network.target nss-lookup.target
-[Service]
-User=root
-CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
-AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
-NoNewPrivileges=true
-ExecStart=/usr/local/bin/xray run -config /usr/local/etc/xray/%i.json
-Restart=on-failure
-RestartSec=3s
-RestartPreventExitStatus=23
-LimitNPROC=10000
-LimitNOFILE=1000000
-[Install]
-WantedBy=multi-user.target
-END
-
-
 # // IPTABLE TCP 
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
